@@ -1,2 +1,1 @@
-# Luvin
-Korean style college meeting platform
+# Heroku with Python-Flask
