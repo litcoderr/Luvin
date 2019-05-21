@@ -19,7 +19,7 @@
                 <h1 class="font-weight-bold">데이트 각도기</h1>
                 <p class="lead">님이 썸타는 그분과 <b>데이트 잡을 확률</b>을 <i>딥러닝 모델</i>을 이용하여 <b>97.5%</b>의 확률로 알려줍니다</p>
             </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block mt-5" onClick="document.getElementById('mainQuestionaire').scrollIntoView({ behavior: 'smooth', block: 'start' });">데이트 확률 바로 알아보기 &#128521;</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block mt-5" onClick="document.getElementById('mainQuestionaire').scrollIntoView({ behavior: 'smooth', block: 'start' });">데이트 확률 바로 알아보기 &#128072;</button>
         </div>
         <div class="container-fluid">
             <div class="card text-white bg-warning mb-3">
@@ -63,10 +63,41 @@
                     </div>
                     <div class="card-body">
                         <p class="card-text">당신의 성별을 선택해주세요</p>
+                        <div class="btn-group btn-group-toggle full-width" data-toggle="buttons">
+                            <label class="btn btn-outline-primary" id="gen_1_btn" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off"> 남자 &#128113;
+                            </label>
+                            <label class="btn btn-outline-danger" id="gen_2_btn" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off"> 여자 &#128105;
+                            </label>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-success btn-block" id="sb_1_btn" disabled onclick="submit(this.id)">2단계 &#128072;&#128072;</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-step2-content" role="tabpanel" aria-labelledby="pills-step2">step2</div>
+            <div class="tab-pane fade" id="pills-step2-content" role="tabpanel" aria-labelledby="pills-step2">
+                <div class="card border-primary mb-3 h-100">
+                    <div class="card-header">
+                        <b>당신의 성별은?</b>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">당신의 성별을 선택해주세요</p>
+                        <div class="btn-group btn-group-toggle full-width" data-toggle="buttons">
+                            <label class="btn btn-outline-primary" id="gen_1_btn" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off"> 남자 &#128113;
+                            </label>
+                            <label class="btn btn-outline-danger" id="gen_2_btn" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off"> 여자 &#128105;
+                            </label>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-success btn-block" id="sb_1_btn" disabled onclick="submit(this.id)">2단계 &#128072;&#128072;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="tab-pane fade" id="pills-step3-content" role="tabpanel" aria-labelledby="pills-step3">step3</div>
             <div class="tab-pane fade" id="pills-step4-content" role="tabpanel" aria-labelledby="pills-step4">step4</div>
             <div class="tab-pane fade" id="pills-step5-content" role="tabpanel" aria-labelledby="pills-step5">step5</div>
@@ -75,8 +106,9 @@
     </div>
 
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
