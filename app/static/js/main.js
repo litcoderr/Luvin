@@ -1,21 +1,3 @@
-
-// collection of buttons and their info
-var id_info = {
-    "gen_1_btn" : {
-        "step" : 1,
-        "index" : 0,
-        "value" : 1
-    },
-    "gen_2_btn" : {
-        "step" : 1,
-        "index" : 0,
-        "value" : 0
-    },
-    "sb_1_btn" : {
-        "step" : 1
-    }
-}
-
 var data = { // data to be passed to server
     1 : [-1],
     2 : [-1,-1,-1,-1,-1],
@@ -27,18 +9,37 @@ var data = { // data to be passed to server
 
 function checkDone(step){ // check if current step is done filling out
     var validness = true;
-    for(var i=0;i<data[step].length;i++){
-        if(data[step][i]==-1) validness = false; break;
+    if(step==6){
+        var index = 1
+        for(index=1;index<7;index++){
+            var i = 0;
+            for(i=0;i<data[index].length;i++){
+                if(data[index][i]==-1) {
+                    validness = false;
+                    break;
+                }
+            }
+        }
+    }else{
+        var i = 0;
+        for(i=0;i<data[step].length;i++){
+            if(data[step][i]==-1) {
+                validness = false;
+                break;
+            }
+        }
     }
+    
     return validness
 }
 
 function btnCheck(id){ // called when button is clicked
-    var cur_step = id_info[id]["step"];
-    var cur_index = id_info[id]["index"];
-    var cur_value = id_info[id]["value"];
+    var info = id.split("_");
+    var cur_step = info[0];
+    var cur_index = info[1];
+    var cur_value = info[2];
     // upadte changes
-    data[cur_step][cur_index] = cur_value;
+    data[cur_step][cur_index] = parseFloat(cur_value);
 
     // check if next is available
     // if valid --> turn on button
@@ -56,7 +57,8 @@ function btnCheck(id){ // called when button is clicked
 
 function submit(id){
     // check if last submit or not
-    var cur_step = id_info[id]["step"];
+    var cur_step = parseInt(id.split("_")[1]);
+    console.log(data);
     if(cur_step==6){
         // Last submit btn pressed
         // do server thing here
@@ -72,7 +74,6 @@ function submit(id){
         // 3. change current div
         document.getElementById("pills-step"+(cur_step)+"-content").classList.remove('active','show');
         // 4. change next div
-        $("#pills-step"+(cur_step+1)+"-content").fadeIn(150);
         document.getElementById("pills-step"+(cur_step+1)+"-content").classList.add('active','show');
     }
 }

@@ -64,10 +64,10 @@
                     <div class="card-body">
                         <p class="card-text">당신의 성별을 선택해주세요</p>
                         <div class="btn-group btn-group-toggle full-width" data-toggle="buttons">
-                            <label class="btn btn-outline-primary" id="gen_1_btn" onClick="btnCheck(this.id)">
+                            <label class="btn btn-outline-primary" id="1_0_1" onClick="btnCheck(this.id)">
                                 <input type="radio" name="options" autocomplete="off"> 남자 &#128113;
                             </label>
-                            <label class="btn btn-outline-danger" id="gen_2_btn" onClick="btnCheck(this.id)">
+                            <label class="btn btn-outline-danger" id="1_0_0" onClick="btnCheck(this.id)">
                                 <input type="radio" name="options" autocomplete="off"> 여자 &#128105;
                             </label>
                         </div>
@@ -80,33 +80,374 @@
             <div class="tab-pane fade" id="pills-step2-content" role="tabpanel" aria-labelledby="pills-step2">
                 <div class="card border-primary mb-3 h-100">
                     <div class="card-header">
-                        <b>당신의 성별은?</b>
+                        <b>상대방의 어떤 부분을 얼만큼 중요하게 생각하시나요?</b>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">당신의 성별을 선택해주세요</p>
-                        <div class="btn-group btn-group-toggle full-width" data-toggle="buttons">
-                            <label class="btn btn-outline-primary" id="gen_1_btn" onClick="btnCheck(this.id)">
-                                <input type="radio" name="options" autocomplete="off"> 남자 &#128113;
+                        <p class="card-text"><b>외모 (Attractive)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="2_0_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
                             </label>
-                            <label class="btn btn-outline-danger" id="gen_2_btn" onClick="btnCheck(this.id)">
-                                <input type="radio" name="options" autocomplete="off"> 여자 &#128105;
+                            <label class="btn btn-outline-info" id="2_0_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="2_0_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="2_0_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="2_0_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>진정성 (Sincere)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="2_1_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="2_1_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="2_1_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="2_1_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="2_1_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>지능수준 (Intelligence)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="2_2_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="2_2_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="2_2_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="2_2_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="2_2_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>유머감각 (Funny)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="2_3_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="2_3_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="2_3_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="2_3_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="2_3_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>목표의 유무 (Ambition)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="2_4_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="2_4_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="2_4_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="2_4_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="2_4_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
                             </label>
                         </div>
                         <div class="mt-5">
-                            <button type="button" class="btn btn-success btn-block" id="sb_1_btn" disabled onclick="submit(this.id)">2단계 &#128072;&#128072;</button>
+                            <button type="button" class="btn btn-success btn-block" id="sb_2_btn" disabled onclick="submit(this.id)">3단계 &#128072;&#128072;</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-step3-content" role="tabpanel" aria-labelledby="pills-step3">step3</div>
-            <div class="tab-pane fade" id="pills-step4-content" role="tabpanel" aria-labelledby="pills-step4">step4</div>
-            <div class="tab-pane fade" id="pills-step5-content" role="tabpanel" aria-labelledby="pills-step5">step5</div>
-            <div class="tab-pane fade" id="pills-step6-content" role="tabpanel" aria-labelledby="pills-step6">step6</div>
+            <div class="tab-pane fade" id="pills-step3-content" role="tabpanel" aria-labelledby="pills-step3">
+                <div class="card border-primary mb-3 h-100">
+                    <div class="card-header">
+                        <b>각 항목에 따라 자기 자신을 평가를 한다면?</b>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><b>외모 (Attractive)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="3_0_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="3_0_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="3_0_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="3_0_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="3_0_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>진정성 (Sincere)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="3_1_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="3_1_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="3_1_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="3_1_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="3_1_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>지능수준 (Intelligence)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="3_2_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="3_2_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="3_2_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="3_2_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="3_2_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>유머감각 (Funny)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="3_3_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="3_3_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="3_3_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="3_3_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="3_3_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>목표의 유무 (Ambition)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="3_4_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="3_4_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="3_4_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="3_4_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="3_4_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-success btn-block" id="sb_3_btn" disabled onclick="submit(this.id)">4단계 &#128072;&#128072;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-step4-content" role="tabpanel" aria-labelledby="pills-step4">
+                <div class="card border-primary mb-3 h-100">
+                    <div class="card-header">
+                        <b>각 항목에 따라 상대방을 평가를 한다면?</b>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text"><b>외모 (Attractive)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="4_0_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="4_0_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="4_0_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="4_0_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="4_0_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>진정성 (Sincere)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="4_1_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="4_1_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="4_1_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="4_1_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="4_1_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>지능수준 (Intelligence)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="4_2_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="4_2_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="4_2_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="4_2_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="4_2_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>유머감각 (Funny)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="4_3_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="4_3_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="4_3_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="4_3_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="4_3_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <p class="card-text"><b>목표의 유무 (Ambition)</b></p>
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="4_4_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="4_4_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="4_4_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="4_4_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="4_4_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-success btn-block" id="sb_4_btn" disabled onclick="submit(this.id)">5단계 &#128072;&#128072;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-step5-content" role="tabpanel" aria-labelledby="pills-step5">
+                <div class="card border-primary mb-3 h-100">
+                    <div class="card-header">
+                        <b>상대방과의 관심사가 얼마나 겹치나요?</b>
+                    </div>
+                    <div class="card-body">
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="5_0_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="5_0_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="5_0_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="5_0_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="5_0_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-success btn-block" id="sb_5_btn" disabled onclick="submit(this.id)">마지막 &#128072;&#128072;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-step6-content" role="tabpanel" aria-labelledby="pills-step6">
+                <div class="card border-primary mb-3 h-100">
+                    <div class="card-header">
+                        <b>상대방이 당신에게 얼마나 관심있어 보이나요?</b>
+                    </div>
+                    <div class="card-body">
+                        <div class="btn-group btn-group-toggle full-width mb-3" data-toggle="buttons">
+                            <label class="btn btn-outline-info" id="6_0_0.1" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">1
+                            </label>
+                            <label class="btn btn-outline-info" id="6_0_0.3" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">2
+                            </label>
+                            <label class="btn btn-outline-info" id="6_0_0.5" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">3
+                            </label>
+                            <label class="btn btn-outline-info" id="6_0_0.7" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">4
+                            </label>
+                            <label class="btn btn-outline-info" id="6_0_0.9" onClick="btnCheck(this.id)">
+                                <input type="radio" name="options" autocomplete="off">5
+                            </label>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <button type="button" class="btn btn-danger btn-block" id="sb_6_btn" disabled onclick="submit(this.id)">바로 확률 알아보기 &#128072;&#128072;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
