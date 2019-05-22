@@ -2,7 +2,7 @@
 var current_path = new URL(window.location.href);
 var request_id = current_path.searchParams.get("request_id"); // got request id string
 
-mode = "deploy"
+mode = "debug"
 linkmode = {
     "deploy" : "https://luvin.herokuapp.com",
     "debug" : "http://127.0.0.1:5000'"
