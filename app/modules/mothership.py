@@ -1,4 +1,5 @@
 import queue
+import app.modules.engine as engine
 
 # Main Controller to manage tasks
 class Controller():
@@ -6,6 +7,9 @@ class Controller():
         # initialize task manager
         self.taskManager = TaskManager()
         self.working = False
+
+        # initialize engine
+        self.engine = engine.EngineController()
 
     # add task using Task Manager
     def add(self, request_id, data):
@@ -23,7 +27,7 @@ class Controller():
 
                 # 2. Do task and get result
                 # TODO generate result here
-                result = 10
+                result = self.engine.run(task)
                 self.working = False
 
                 # 3. update task status

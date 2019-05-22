@@ -34,8 +34,6 @@ def check_status():
         response = {
             "result" : result
         }
-        print(controller.taskManager.queue)
-        print(controller.taskManager.task)
         return jsonify(response)
     else:
         pass

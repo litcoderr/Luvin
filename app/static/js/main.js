@@ -7,10 +7,10 @@ var data = { // data to be passed to server
     6 : [-1]
 }
 
-mode = "debug"
+mode = "deploy"
 linkmode = {
     "deploy" : "https://luvin.herokuapp.com",
-    "debug" : "http://127.0.0.1:5000'"
+    "debug" : "http://127.0.0.1:5000"
 }
 
 link = {

@@ -2,10 +2,10 @@
 var current_path = new URL(window.location.href);
 var request_id = current_path.searchParams.get("request_id"); // got request id string
 
-mode = "debug"
+mode = "deploy"
 linkmode = {
     "deploy" : "https://luvin.herokuapp.com",
-    "debug" : "http://127.0.0.1:5000'"
+    "debug" : "http://127.0.0.1:5000"
 }
 
 var request_path = linkmode[mode]+"/api/fetch/?request_id="+request_id;
@@ -45,14 +45,17 @@ function check_task(){
         console.log("result ready");
         console.log(result);
         // TODO change html value to result
+        document.getElementById("result_content").innerHTML = result + "%";
     }else if(result == -1){ // result not valid yet
         console.log("result not ready");
     }else if(result == -2){
         console.log("wrong id");
         clearInterval(iterator);
         // TODO change html value to wrong id
+        document.getElementById("result_content").innerHTML = "잘못된 요청.. 다시 시도해주세요";
     }
     if(!success){
         // TODO change html value to "please try later"
+        document.getElementById("result_content").innerHTML = "Loading... 오래 걸린다면 다시 시도해주세요";
     }
 }
