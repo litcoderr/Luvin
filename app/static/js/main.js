@@ -7,9 +7,15 @@ var data = { // data to be passed to server
     6 : [-1]
 }
 
+mode = "d"
+linkmode = {
+    "p" : "https://luvin.herokuapp.com",
+    "d" : "http://127.0.0.1:5000'"
+}
+
 link = {
-    "api_request" : "http://https://luvin.herokuapp.com/api/request/",
-    "result_page" : "http://https://luvin.herokuapp.com/result"
+    "api_request" : linkmode[mode]+"/api/request/",
+    "result_page" : linkmode[mode]+"/result"
 }
 
 function checkDone(step){ // check if current step is done filling out

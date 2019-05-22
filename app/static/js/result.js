@@ -1,7 +1,14 @@
 // Request Variables
 var current_path = new URL(window.location.href);
 var request_id = current_path.searchParams.get("request_id"); // got request id string
-var request_path = "http://https://luvin.herokuapp.com/api/fetch/?request_id="+request_id;
+
+mode = "d"
+linkmode = {
+    "p" : "https://luvin.herokuapp.com",
+    "d" : "http://127.0.0.1:5000'"
+}
+
+var request_path = linkmode[mode]+"/api/fetch/?request_id="+request_id;
 
 // Check/Iteration variables
 var iter_interval = 1000;
