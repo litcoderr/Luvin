@@ -2,10 +2,10 @@
 var current_path = new URL(window.location.href);
 var request_id = current_path.searchParams.get("request_id"); // got request id string
 
-mode = "d"
+mode = "deploy"
 linkmode = {
-    "p" : "https://luvin.herokuapp.com",
-    "d" : "http://127.0.0.1:5000'"
+    "deploy" : "https://luvin.herokuapp.com",
+    "debug" : "http://127.0.0.1:5000'"
 }
 
 var request_path = linkmode[mode]+"/api/fetch/?request_id="+request_id;
