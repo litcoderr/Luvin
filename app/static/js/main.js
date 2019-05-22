@@ -7,6 +7,11 @@ var data = { // data to be passed to server
     6 : [-1]
 }
 
+link = {
+    "api_request" : "http://127.0.0.1:5000/api/request/",
+    "result_page" : "http://127.0.0.1:5000/result"
+}
+
 function checkDone(step){ // check if current step is done filling out
     var validness = true;
     if(step==6){
@@ -60,8 +65,14 @@ function submit(id){
     var cur_step = parseInt(id.split("_")[1]);
     console.log(data);
     if(cur_step==6){
-        // Last submit btn pressed
-        // do server thing here
+        var payload = {};
+        var request_id = getRequestId();
+        var request_string = getDatatoString();
+
+        payload["request_id"] = request_id;
+        payload["request_string"] = request_string;
+        post(link["api_request"],payload);
+        window.location.href = gen_result_link(request_id);
     }else{
         // go to next btn pressed
         // 1. change current link
@@ -76,4 +87,35 @@ function submit(id){
         // 4. change next div
         document.getElementById("pills-step"+(cur_step+1)+"-content").classList.add('active','show');
     }
+}
+
+function gen_result_link(request_id){
+    var result = link["result_page"]+"?request_id="+request_id;
+    return result;
+}
+
+function getRequestId(){
+    var uuid = ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+      );
+    return uuid;
+}
+
+function getDatatoString(){
+    var i = 1;
+    var result_string = "";
+    for(i=1;i<=6;i++){
+        var j = 0;
+        for(j=0;j<data[i].length;j++){
+            result_string += (data[i][j]+" ");
+        }
+    }
+    return result_string;
+}
+
+function post(url, data) {
+    $.post({
+        url,
+        data
+    });
 }
