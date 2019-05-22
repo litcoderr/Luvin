@@ -8,8 +8,8 @@ var data = { // data to be passed to server
 }
 
 link = {
-    "api_request" : "http://127.0.0.1:5000/api/request/",
-    "result_page" : "http://127.0.0.1:5000/result"
+    "api_request" : "http://https://luvin.herokuapp.com/api/request/",
+    "result_page" : "http://https://luvin.herokuapp.com/result"
 }
 
 function checkDone(step){ // check if current step is done filling out
