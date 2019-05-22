@@ -113,6 +113,7 @@ class V1(nn.Module):
 
 class GoogleDriveDownloader():
     def __init__(self):
+        # google drive downloader
         pass
 
     def download(self, id, destination):
